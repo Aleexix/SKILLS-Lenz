@@ -133,7 +133,8 @@ async function buildSkill(id) {
   };
 }
 
-const ids = (await readdir(SKILLS_DIR, { withFileTypes: true }))
+// Sin skills todavía, la carpeta puede no existir (git no guarda carpetas vacías).
+const ids = (await readdir(SKILLS_DIR, { withFileTypes: true }).catch(() => []))
   .filter((e) => e.isDirectory())
   .map((e) => e.name)
   .sort();

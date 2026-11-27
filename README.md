@@ -47,5 +47,3 @@ Para probar antes de subir: `node scripts/build-index.mjs` (necesita Node 18 o m
 - **Actualizar:** cambia sus archivos y haz push. A quien la tenga instalada le aparece "Hay una
   versión nueva", y decide si la actualiza. Nada se actualiza solo.
 - **Quitar del catálogo:** borra su carpeta. Quien ya la instaló la conserva.
-
-Las skills que hay ahora son de prueba, escritas para ver cómo se ve el catálogo.
